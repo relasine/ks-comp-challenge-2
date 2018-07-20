@@ -19,7 +19,7 @@ header {
 
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 30% 70%;
 }
 
 .header-right-wrapper {
@@ -47,6 +47,14 @@ header {
   grid-row: 2;
 }
 
+.hidden-wrapper {
+  display:none;
+}
+
+.shares-wrapper, .playlists-wrapper, .videos-wrapper {
+  display: inline-block;
+}
+
 .account-icon {
   font-size: 1.2rem;
 }
@@ -56,19 +64,43 @@ header {
   cursor: pointer;
 }
 
+.hidden-icon:hover {
+  cursor: pointer;
+  color: #24B4FB;
+}
+
 .shares-link, .playlists-link, .videos-link {
   font-size: 1rem;
 
   display: inline-block;
   margin-bottom: 1rem;
   margin-left: 1rem;
-  margin-top: .5rem;
+  margin-top: 2rem;
+}
+
+.shares-link {
+  margin-left: 1.1rem;
+}
+
+.videos-link {
+  margin-left: 1.1rem
 }
 
 .header-icon{
   font-size: 1.3rem;
-  margin-left: 2rem;
   margin-bottom: 1rem;
+}
+
+.shares-icon {
+  margin-left: 1.6rem;
+}
+
+.playlist-icon {
+  margin-left: 1.5rem;
+}
+
+.videos-icon {
+  margin-left: 1.6rem;
 }
 
 .playlist-icon, .videos-icon, h6, .expand-icon {
@@ -80,20 +112,26 @@ header {
 }
 
 .company-logo {
-  font-size: 4rem;
+  width: 6rem;
 
-  bottom:;
   margin-right: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
 
   justify-self: right;
   grid-column: 2;
   grid-row: 2;
 }
 
+.company-logo:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 /* Card Section Stying */
 .card-grid-wrapper {
   margin: auto;
-  max-width: 71.875rem;
+  max-width: 71rem;
   padding-bottom: 10rem;
 
   display: grid;
@@ -109,31 +147,76 @@ main {
 }
 
 h1 {
+  margin-right: 0;
   margin-top: 0;
   padding-top: 1.5rem;
+
+  grid-column: 1/5;
 }
 
 .card {
   background: #FFFFFF;
+  border-radius: 10px;
   box-shadow: 2px 2px 2px #969696;
 
   width: 17.3rem;
 }
 
 .card-header {
-  background: url('images/working-banner-resize.png');
   background-color: rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   background-size: cover;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
   width: 17.3rem;
   height: 9rem;
 }
 
-.header-overlay div {
+.card-background0 {
+  background: url('images/americanchopper-resize.jpg');
+}
+
+.card-background1 {
+  background: url('images/bulletcat-resize.jpg');
+}
+
+.card-background2 {
+  background: url('images/lolrus.jpg');
+}
+
+.card-background3 {
+  background: url('images/captamerica-resize.jpg');
+}
+
+.card-background4 {
+  background: url('images/isthispigeon-resize.jpg');
+}
+
+.card-background5 {
+  background: url('images/sadkeanu-resize.jpg');
+}
+
+.card-background6 {
+  background: url('images/doge-resize.jpg');
+}
+
+.card-background7 {
+  background: url('images/distractedboyfriend-resize.jpg');
+}
+
+.header-overlay {
   background-color: rgba(0, 0, 0, 0.5);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 
   width: 17.3rem;
   height: 9rem;
+}
+
+.header-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .views-label {
@@ -147,7 +230,7 @@ h1 {
 
   float: left;
   margin-top: .5rem;
-  margin-left: .5rem; 
+  margin-left: .8rem; 
 }
 
 .right-arrow-icon:hover {
@@ -163,6 +246,7 @@ h1 {
 
 .views-label {
   margin-bottom: 0;
+  margin-right: 1.1rem;
   padding-top: .8rem;
 }
 .view-count {
@@ -171,7 +255,7 @@ h1 {
   margin-top: 0;
 }
 
-h1, .persons-name, .date-time, .link, .playlist-label, .playlist-name, .attachments-label, .attachments-count {
+.persons-name, .date-time, .link, .playlist-label, .playlist-name, .attachments-label, .attachments-count {
   margin-left: 1rem;
 }
 
@@ -191,10 +275,17 @@ h1, .persons-name, .date-time, .link, .playlist-label, .playlist-name, .attachme
   background-color: #EFEFEF;
   color: #7A7A7A;  
   font-size: .7rem;
-  overflow: auto;
+  word-break: break-all;
 
   height: 2rem;
   margin-right: 1rem;
+  padding: .3rem;
+}
+
+.link:hover {
+  box-shadow: 1px 1px 1px grey;
+  color: black;
+  cursor: pointer;
 }
 
 h4 {
@@ -212,9 +303,12 @@ h4 {
 .playlist-name {
   margin-bottom: 0;
   margin-top: 0;
+  margin-right: 1rem;
 }
 
-
+.view-count, .attachments-count {
+  font-weight: 300;
+}
 
 .attachments-label {
   margin-bottom: 0;
@@ -230,11 +324,136 @@ h4 {
 }
 
 /* Media Queries */
-
-@media (max-width: 700px) {
-
+@media (min-width: 1790px) {
+  .card-grid-wrapper {
+  grid-template-columns: repeat(6, 1fr);
 }
 
-@media (max-width: 400px) {
+  h1 {
+    grid-column: 1/7;
+  }
+}
+
+@media (min-width: 1500px) {
+  .card-grid-wrapper {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+  h1 {
+    grid-column: 1/6;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card-grid-wrapper {
+    max-width: 42rem;
+
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h1 {
+    grid-column: 1/4;
+  }
+}
+
+@media (max-width: 910px) {
+  .card-grid-wrapper {
+    max-width: 35rem;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    grid-column: 1/3;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    grid-template-columns: 57% 43%;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .header-left-wrapper {
+    grid-column: 1;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .shares-wrapper {
+    grid-row: 1;
+  }
+
+  .playlists-wrapper {
+    grid-row: 2;
+  }
+
+  .videos-wrapper {
+    grid-row: 3
+  }
+
+  .header-icon {
+    display: inline-block;
+  }
+
+  .header-right-wrapper {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .shares-link, .playlists-link, .videos-link {
+    margin-top: 1rem;
+}
+
+@media (max-width: 620px) {
+  .card-grid-wrapper {
+    width: 277px;
+
+    grid-template-columns: 1fr;
+  }
+  h1 {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 370px) {
+  header {
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 1fr 1fr;
+  }
+/*  .company-logo {
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: left;
+  }*/
+
+  .header-left-wrapper {
+    grid-template-rows: 1fr;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .shares-link, .shares-icon {
+    display: inline;
+    margin-bottom: 0;
+    margin-top: 2.3rem;
+    float:left;
+  }
+
+  .shares-icon {
+    padding-top: .1rem;
+  }
+
+  .playlists-wrapper, .shares-wrapper, .videos-wrapper {
+    display: none;
+  }
+
+  .hidden-wrapper {
+    display: inline;
+  }
 
 }

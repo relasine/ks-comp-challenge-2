@@ -2,10 +2,10 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Static Comp 2</title>
+  <title>Mey-Meys</title>
 </head>
 <body>
   <header>
@@ -13,164 +13,173 @@
       <i class="fas fa-caret-down expand-icon"></i>
       <h6 class="username">Admin Username</h6>
       <i class="far fa-user-circle account-icon"></i>
-
     </div>
-    <div class= header-left-wrapper>
-      <i class="fas fa-share-alt-square header-icon"></i>      
-      <h5 class="shares-link">shares</h5>
-      <i class="fas fa-list-ul header-icon playlist-icon"></i>
-      <h5 class="playlists-link">playlists</h5>
-      <i class="far fa-user header-icon videos-icon"></i>
-      <h5 class="videos-link">personal videos</h5>
+    <div class="header-left-wrapper">
+      <div class="shares-wrapper">
+        <i class="fas fa-share-alt-square shares-icon header-icon"></i>
+        <h5 class="shares-link">shares</h5>
+      </div>
+      <div class="playlists-wrapper">
+        <i class="fas fa-list-ul header-icon playlist-icon"></i>
+        <h5 class="playlists-link">collections</h5>
+      </div>
+      <div class="videos-wrapper">
+        <i class="far fa-user header-icon videos-icon"></i>
+        <h5 class="videos-link">your favs</h5>
+      </div>
+      <div class="hidden-wrapper">
+        <i class="fas fa-caret-right shares-icon header-icon hidden-icon"></i>
+        <h5 class="shares-link">shares</h5>
+      </div>
     </div>
-    <i class="fab fa-digg company-logo"></i>
+      <img src="images/memeslogo.png" class="company-logo">
   </header>
   <main>
-    <h1 class="shares-header">Shares</h1>
     <div class="card-grid-wrapper">
+      <h1 class="shares-header">Top mey-meys</h1>
       <article class="card">
-        <section class="card-header">
+        <section class="card-header card-background0">
           <div class ="header-overlay">
             <i class="fas fa-share-square right-arrow-icon"></i>
             <div class="card-div-right-wrapper">
               <h4 class="views-label">VIEWS</h4>
-              <p class="view-count">03</p>
+              <p class="view-count">12</p>
             </div>
           </div>
         </section>
-        <h3 class="persons-name">Person's Name</h3>
-        <p class="date-time">April 9th, 2017, 9:15 PM MST</p>
-        <p class="link">http://www.ilikepants.com/parties/1999/icantbelieveit.html</p>
-        <h4 class="playlist-label">PLAYLIST</h4>
-        <h3 class="playlist-name">Dis playlist, doe</h3>
-        <h4 class="attachments-label">ATTACHMENTS</h4>
+        <h3 class="persons-name">American Chopper</h3>
+        <p class="date-time">April 9th, 2018, 9:15 PM MST</p>
+        <p class="link">http://www.memeparty.com/shoutymemes/americanchoppermeme.html</p>
+        <h4 class="playlist-label">DESCRIPTION</h4>
+        <h3 class="playlist-name">Frame an otherwise mundane argument as a screaming match between two jackasses!</h3>
+        <h4 class="attachments-label">COLLECTIONS</h4>
+        <p class="attachments-count">22</p>
+      </article> 
+      <article class="card">
+        <section class="card-header card-background1">
+          <div class ="header-overlay">
+            <i class="fas fa-share-square right-arrow-icon"></i>
+            <div class="card-div-right-wrapper">
+              <h4 class="views-label">VIEWS</h4>
+              <p class="view-count">09</p>
+            </div>
+          </div>
+        </section>
+        <h3 class="persons-name">Bullet Cat</h3>
+        <p class="date-time">February 23rd, 2013, 3:20 PM MST</p>
+        <p class="link">http://www.allthecats.com/impossible/2013/bulletcat.html</p>
+        <h4 class="playlist-label">DESCRIPTION</h4>
+        <h3 class="playlist-name">Is this cat flying? Was it fired out of a cannon? Is it magic? So many questions!</h3>
+        <h4 class="attachments-label">COLLECTIONS</h4>
         <p class="attachments-count">05</p>
       </article> 
       <article class="card">
-        <section class="card-header">
+        <section class="card-header card-background2">
           <div class ="header-overlay">
             <i class="fas fa-share-square right-arrow-icon"></i>
             <div class="card-div-right-wrapper">
               <h4 class="views-label">VIEWS</h4>
-              <p class="view-count">03</p>
+              <p class="view-count">24</p>
             </div>
           </div>
         </section>
-        <h3 class="persons-name">Person's Name</h3>
-        <p class="date-time">April 9th, 2017, 9:15 PM MST</p>
-        <p class="link">http://www.ilikepants.com/parties/1999/icantbelieveit.html</p>
-        <h4 class="playlist-label">PLAYLIST</h4>
-        <h3 class="playlist-name">Dis playlist, doe</h3>
-        <h4 class="attachments-label">ATTACHMENTS</h4>
-        <p class="attachments-count">05</p>
+        <h3 class="persons-name">LOLRus</h3>
+        <p class="date-time">March 5th, 2009, 1:20 PM MST</p>
+        <p class="link">http://www.oldmemes.com/2009/lolrus/bucket.html</p>
+        <h4 class="playlist-label">DESCRIPTION</h4>
+        <h3 class="playlist-name">Who took his bucket?! You better come forward, because LOLRus is coming for you.</h3>
+        <h4 class="attachments-label">COLLECTIONS</h4>
+        <p class="attachments-count">08</p>
       </article> 
       <article class="card">
-        <section class="card-header">
+        <section class="card-header card-background3">
           <div class ="header-overlay">
             <i class="fas fa-share-square right-arrow-icon"></i>
             <div class="card-div-right-wrapper">
               <h4 class="views-label">VIEWS</h4>
-              <p class="view-count">03</p>
+              <p class="view-count">15</p>
             </div>
           </div>
         </section>
-        <h3 class="persons-name">Person's Name</h3>
-        <p class="date-time">April 9th, 2017, 9:15 PM MST</p>
-        <p class="link">http://www.ilikepants.com/parties/1999/icantbelieveit.html</p>
-        <h4 class="playlist-label">PLAYLIST</h4>
-        <h3 class="playlist-name">Dis playlist, doe</h3>
-        <h4 class="attachments-label">ATTACHMENTS</h4>
-        <p class="attachments-count">05</p>
+        <h3 class="persons-name">So you decided...</h3>
+        <p class="date-time">September 22nd, 2017, 10:15 AM MST</p>
+        <p class="link">http://www.dankestmemes.com/avengers/captam/soyoudecided.html</p>
+        <h4 class="playlist-label">DESCRIPTION</h4>
+        <h3 class="playlist-name">Someone thinks that you've made a bad decision and would like to respond condescendingly.</h3>
+        <h4 class="attachments-label">COLLECTIONS</h4>
+        <p class="attachments-count">30</p>
       </article> 
       <article class="card">
-        <section class="card-header">
+        <section class="card-header card-background4">
           <div class ="header-overlay">
             <i class="fas fa-share-square right-arrow-icon"></i>
             <div class="card-div-right-wrapper">
               <h4 class="views-label">VIEWS</h4>
-              <p class="view-count">03</p>
+              <p class="view-count">14</p>
             </div>
           </div>
         </section>
-        <h3 class="persons-name">Person's Name</h3>
-        <p class="date-time">April 9th, 2017, 9:15 PM MST</p>
-        <p class="link">http://www.ilikepants.com/parties/1999/icantbelieveit.html</p>
-        <h4 class="playlist-label">PLAYLIST</h4>
-        <h3 class="playlist-name">Dis playlist, doe</h3>
-        <h4 class="attachments-label">ATTACHMENTS</h4>
-        <p class="attachments-count">05</p>
+        <h3 class="persons-name">Is this pigeon?</h3>
+        <p class="date-time">May 10th, 2018, 12:03 PM MST</p>
+        <p class="link">http://www.animememes.com/confusion/isthispigeon.html</p>
+        <h4 class="playlist-label">DESCRIPTION</h4>
+        <h3 class="playlist-name">I don't even know what's going on with this one. Someone explain this to me.</h3>
+        <h4 class="attachments-label">COLLECTIONS</h4>
+        <p class="attachments-count">21</p>
       </article> 
       <article class="card">
-        <section class="card-header">
+        <section class="card-header card-background5">
           <div class ="header-overlay">
             <i class="fas fa-share-square right-arrow-icon"></i>
             <div class="card-div-right-wrapper">
               <h4 class="views-label">VIEWS</h4>
-              <p class="view-count">03</p>
+              <p class="view-count">07</p>
             </div>
           </div>
         </section>
-        <h3 class="persons-name">Person's Name</h3>
-        <p class="date-time">April 9th, 2017, 9:15 PM MST</p>
-        <p class="link">http://www.ilikepants.com/parties/1999/icantbelieveit.html</p>
-        <h4 class="playlist-label">PLAYLIST</h4>
-        <h3 class="playlist-name">Dis playlist, doe</h3>
-        <h4 class="attachments-label">ATTACHMENTS</h4>
-        <p class="attachments-count">05</p>
+        <h3 class="persons-name">Sad Keanu</h3>
+        <p class="date-time">October 15th, 2017, 9:04 AM MST</p>
+        <p class="link">http://www.keanureeves.com/portfolio/stages/sadkeanu.html</p>
+        <h4 class="playlist-label">DESCRIPTION</h4>
+        <h3 class="playlist-name">Keanu Reeves! Sitting! On a bench! What's he thinking about? What's he eating?!</h3>
+        <h4 class="attachments-label">COLLECTIONS</h4>
+        <p class="attachments-count">09</p>
       </article> 
       <article class="card">
-        <section class="card-header">
+        <section class="card-header card-background6">
           <div class ="header-overlay">
             <i class="fas fa-share-square right-arrow-icon"></i>
             <div class="card-div-right-wrapper">
               <h4 class="views-label">VIEWS</h4>
-              <p class="view-count">03</p>
+              <p class="view-count">14</p>
             </div>
           </div>
         </section>
-        <h3 class="persons-name">Person's Name</h3>
-        <p class="date-time">April 9th, 2017, 9:15 PM MST</p>
-        <p class="link">http://www.ilikepants.com/parties/1999/icantbelieveit.html</p>
-        <h4 class="playlist-label">PLAYLIST</h4>
-        <h3 class="playlist-name">Dis playlist, doe</h3>
-        <h4 class="attachments-label">ATTACHMENTS</h4>
-        <p class="attachments-count">05</p>
+        <h3 class="persons-name">Doge</h3>
+        <p class="date-time">January 23rd, 2016, 7:31 PM MST</p>
+        <p class="link">http://www.dangdoggos.com/shibainu/memes/doge.html</p>
+        <h4 class="playlist-label">DESCRIPTION</h4>
+        <h3 class="playlist-name">Is this sarcasm? I can't tell! Doesn't matter! MUCH DOGGO! SUCH WOW!</h3>
+        <h4 class="attachments-label">COLLECTIONS</h4>
+        <p class="attachments-count">25</p>
       </article> 
       <article class="card">
-        <section class="card-header">
+        <section class="card-header card-background7">
           <div class ="header-overlay">
             <i class="fas fa-share-square right-arrow-icon"></i>
             <div class="card-div-right-wrapper">
               <h4 class="views-label">VIEWS</h4>
-              <p class="view-count">03</p>
+              <p class="view-count">37</p>
             </div>
           </div>
         </section>
-        <h3 class="persons-name">Person's Name</h3>
-        <p class="date-time">April 9th, 2017, 9:15 PM MST</p>
-        <p class="link">http://www.ilikepants.com/parties/1999/icantbelieveit.html</p>
-        <h4 class="playlist-label">PLAYLIST</h4>
-        <h3 class="playlist-name">Dis playlist, doe</h3>
-        <h4 class="attachments-label">ATTACHMENTS</h4>
-        <p class="attachments-count">05</p>
-      </article> 
-      <article class="card">
-        <section class="card-header">
-          <div class ="header-overlay">
-            <i class="fas fa-share-square right-arrow-icon"></i>
-            <div class="card-div-right-wrapper">
-              <h4 class="views-label">VIEWS</h4>
-              <p class="view-count">03</p>
-            </div>
-          </div>
-        </section>
-        <h3 class="persons-name">Person's Name</h3>
-        <p class="date-time">April 9th, 2017, 9:15 PM MST</p>
-        <p class="link">http://www.ilikepants.com/parties/1999/icantbelieveit.html</p>
-        <h4 class="playlist-label">PLAYLIST</h4>
-        <h3 class="playlist-name">Dis playlist, doe</h3>
-        <h4 class="attachments-label">ATTACHMENTS</h4>
-        <p class="attachments-count">05</p>
+        <h3 class="persons-name">Distracted Boyfriend</h3>
+        <p class="date-time">December 12th, 2017, 6:20 PM MST</p>
+        <p class="link">http://www.memefactory.com/topmemes/2017/distractedboyfriend.html</p>
+        <h4 class="playlist-label">DESCRIPTION</h4>
+        <h3 class="playlist-name">That man is going to be in so much trouble when he gets home.</h3>
+        <h4 class="attachments-label">COLLECTIONS</h4>
+        <p class="attachments-count">08</p>
       </article> 
     </div>
   </main>
