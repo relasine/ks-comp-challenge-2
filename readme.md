@@ -5,4 +5,4 @@ Assignment specs can be found [here](http://frontend.turing.io/projects/m1-stati
 
 ![Alt text](http://frontend.turing.io/assets/images/static-comp-challenge-2.jpg "Assignment Screenshot")
 
-![Alt text](images/screenshot.jpg "App Screenshot")
+![Alt text](images/sc2screenshot.jpg "App Screenshot")
